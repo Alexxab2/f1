@@ -1,0 +1,151 @@
+html  {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+/*  Tableau */
+
+tr {
+  line-height: 18px;
+}
+
+thead {
+  border-bottom: 3px solid #ee171f;
+  color : darkblue;
+  font-weight:bold;
+}
+
+/* lien */
+
+a, a:hover, a:visited, a:active
+{
+  text-decoration:none;
+}
+
+/* les champs de saisie */
+
+.obligatoire:after {
+  color: red;
+  content: ' *';
+}
+
+input, select {
+  border: 0 solid !important;
+  border-bottom: #cccccc 1px solid !important;
+  box-shadow:none !important;
+  border-radius: 0 !important;
+  margin-top: 0 !important;
+  padding-left: 5px !important;
+  transition: all 200ms ease-out !important;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+input:read-only {
+  border: 0 solid !important;
+  padding-left: 5px !important;
+  background-color: lightgray !important;
+}
+
+input:disabled {
+/*  background-color: transparent !important;*/
+}
+
+input:focus, select:focus {
+  border: 1px solid !important;
+  font-size: 1.05rem;
+
+}
+
+input.erreur {
+  border-bottom: #b20a37 solid !important;
+  color: #b20a37;
+  background-image: url('nok.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: 20px;
+}
+
+input.correct {
+  border-bottom: green solid !important;
+  color: green !important;
+  background-image: url('ok.png')!important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: 20px;
+}
+
+select.correct {
+  border-bottom: green solid !important;
+  color: green !important;
+
+}
+
+label {
+  font-size: 0.8rem !important;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.messageErreur {
+  font-size: 0.8rem;
+  font-style : italic;
+  color : red;
+}
+
+
+.upload {
+  border: 1px dashed ;
+  height: 160px;
+  padding : 5px;
+  margin : 5px;
+}
+
+.upload:hover {
+  background-color : #efefef;
+  cursor :  pointer
+}
+
+/* fixer certains paramètres en fonction de la taille de l'écran
+Extra small <576px	Small ≥576px	 Medium ≥768px Large ≥992px	 Extra large ≥1200px
+*/
+
+/* pour une taille inférieure à 576 px */
+@media (max-width: 576px) {
+  .masquer {
+    display : none;
+  }
+  html  {font-size: 10px; }
+}
+
+/* à partir de 576 px */
+@media (min-width: 576px) {
+  html  {font-size: 11px; }
+}
+
+/* à partir de 768 px  */
+@media (min-width: 768px) {
+  html  {font-size: 12px; }
+}
+
+/* à partir de 992 px  */
+@media (min-width: 992px) {
+  html  {font-size: 13px; }
+}
+
+/* à partir de 1200 px */
+@media (min-width: 1200px) {
+  html  {font-size: 14px; }
+}
+
+/* à partir de 1600 px  */
+@media (min-width: 1600px) {
+  html  {font-size: 16px; }
+}
+

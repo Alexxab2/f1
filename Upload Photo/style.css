@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color : darkslategray;
+}
+
+/* Style pour la zone déposer d'un upload par glisser déposer */
+.upload {
+    border: 1px dashed ;
+    height: 155px;
+    padding : 5px;
+    margin : 5px;
+}
+
+.upload:hover {
+    background-color : #efefef;
+    cursor :  pointer
+}
+
+.messageErreur {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: red;
+}
+
+

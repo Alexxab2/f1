@@ -1,0 +1,60 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover, a:visited, a:active {
+    text-decoration: none;
+    color : darkslategray;
+}
+
+.cadre {
+    display: flex;
+    width: 100%;
+
+
+    border: #1d1d1d 1px solid;
+}
+
+.menu {
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #FFF;
+}
+
+.cadre .menu a {
+    display: block;
+    text-align: left;
+    min-width: 350px;
+    margin: 10px 10px;
+}
+
+/* style ajouté pour la consultation */
+
+/* fixer certains paramètres en fonction de la taille de l'écran
+Extra small <576px	Small ≥576px	 Medium ≥768px Large ≥992px	 Extra large ≥1200px
+*/
+
+/* pour une taille inférieure à 1000 px */
+@media (max-width: 1000px) {
+    .masquer {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
